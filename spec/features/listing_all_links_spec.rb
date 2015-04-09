@@ -15,7 +15,7 @@ feature 'User browses he list of links' do
     expect(page).to have_content('Makers Academy')
   end
 
-  scenario 'filteres by a tag' do
+  scenario 'filters by a tag' do
     visit '/tags/search'
     expect(page).not_to have_content('Makers Academy')
     expect(page).not_to have_content('Code.org')
